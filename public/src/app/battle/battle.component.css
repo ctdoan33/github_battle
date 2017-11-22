@@ -1,0 +1,32 @@
+.battlewrap{
+	text-align: center;
+}
+.panel{
+	width: 350px;
+	height: 180px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 1pt solid black;
+	margin: 15px 1%;
+}
+.notFound{
+	color: red;
+	height: 1em;
+}
+.getUser{
+	color: white;
+	background-color: dodgerblue;
+	width: 330px;
+	margin: 10px;
+}
+img{
+	margin-top: 10px;
+	width: 120px;
+}
+#battlebutton{
+	width: 700px;
+	color: black;
+	background-color: orange;
+	margin: 10px;
+}

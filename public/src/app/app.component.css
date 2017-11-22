@@ -1,0 +1,11 @@
+#wrapper{
+	border: 1pt solid black;
+}
+#title{
+	margin: 10px;
+	display: inline-block;
+}
+#nav{
+	margin: 15px;
+	float: right;
+}

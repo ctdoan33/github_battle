@@ -1,0 +1,13 @@
+<div>
+	<h2 id="rankhead">Rankings</h2>
+	<div id="ranklist">
+		<div *ngFor="let rank of ranks; let idx=index" class="rank">
+			<h1 class="strong">{{idx+1}}</h1>
+			<div class="rankpanel">
+				<img [src]="rank.avatar" alt="avatar">
+				<p>{{rank.username}}</p>
+			</div>
+			<h1 class="strong">Score: {{rank.score}}</h1>
+		</div>
+	</div>
+</div>

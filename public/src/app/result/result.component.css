@@ -1,0 +1,33 @@
+.battlewrap{
+	text-align: center;
+}
+.panel{
+	width: 350px;
+	height: 180px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 1pt solid black;
+	margin: 15px 1%;
+}
+img{
+	margin-top: 10px;
+	width: 120px;
+}
+#result{
+	text-align: left;
+}
+.first{
+	color: green;
+	margin: 10px;
+}
+.second{
+	color: red;
+	margin: 10px;
+}
+#resetbutton{
+	color: white;
+	background-color: black;
+	margin: 10px;
+	width: 100px;
+}

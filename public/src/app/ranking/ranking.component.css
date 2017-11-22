@@ -1,0 +1,29 @@
+#rankhead{
+	margin: 15px;
+}
+#ranklist{
+	border: 1pt solid black;
+	margin: 15px;
+	overflow-y: scroll;
+	height: 800px;
+}
+.rank{
+	border: 1pt solid black;
+}
+.rankpanel{
+	width: 350px;
+	height: 180px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 1pt solid black;
+	margin: 10px;
+}
+.strong{
+	display: inline-block;
+	margin: 15px;
+}
+img{
+	margin-top: 10px;
+	width: 120px;
+}

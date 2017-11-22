@@ -1,0 +1,13 @@
+<div class="battlewrap">
+	<div class="panel" id="result">
+		<h1 class="first">1st Place</h1>
+		<p class="first">{{first.username}} (Score: {{first.score}})</p>
+		<h1 class="second">2nd Place</h1>
+		<p class="second">{{second.username}} (Score: {{second.score}})</p>
+	</div>
+	<div class="panel">
+		<img [src]="first.avatar" alt="winner's avatar">
+		<p>{{first.username}}</p>
+	</div>
+	<a [routerLink]="['/']"><button id="resetbutton">Reset</button></a>
+</div>

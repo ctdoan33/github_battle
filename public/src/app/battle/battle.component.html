@@ -1,0 +1,29 @@
+<div class="battlewrap">
+	<div *ngIf="!player1" class="panel">
+		<h2>Player 1</h2>
+		<form (submit)="getUser1()" #user1form="ngForm">
+			<label for="user1">Github Username:</label>
+			<input type="text" name="user1" id="user1" required [(ngModel)]="username1">
+			<p class="notFound"><span *ngIf="user1NotFound">Github username does not exist, try again.</span></p>
+			<input type="submit" value="Get User" [disabled]="user1form.invalid" class="getUser">
+		</form>
+	</div>
+	<div *ngIf="player1" class="panel">
+		<img [src]="player1.avatar" alt="player 1 avatar">
+		<p>{{player1.username}}</p>
+	</div>
+	<div *ngIf="!player2" class="panel">
+		<h2>Player 2</h2>
+		<form (submit)="getUser2()" #user2form="ngForm">
+			<label for="user2">Github Username:</label>
+			<input type="text" name="user2" id="user2" required [(ngModel)]="username2">
+			<p class="notFound"><span *ngIf="user2NotFound">Github username does not exist, try again.</span></p>
+			<input type="submit" value="Get User" [disabled]="user2form.invalid" class="getUser">
+		</form>
+	</div>
+	<div *ngIf="player2" class="panel">
+		<img [src]="player2.avatar" alt="player 2 avatar">
+		<p>{{player2.username}}</p>
+	</div>
+	<button *ngIf="player1&&player2" (click)="battle()" id="battlebutton">BATTLE!</button>
+</div>
